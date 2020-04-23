@@ -521,8 +521,9 @@ function initialize() {
       
 window.onload = function() {
   settings.MOUSE_POSITION = new Vector(-9001,0); //over 9000!  just starting it off the screen
-
+  if (window.innerWidth > 480) {
   initialize();
+  }
 
   document.getElementById('show-info').onmousedown = function(e) {
     document.getElementById('info').style.display = 'block';
